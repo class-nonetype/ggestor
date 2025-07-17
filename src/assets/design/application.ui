@@ -1,0 +1,1154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>788</width>
+    <height>576</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_3">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QFrame" name="frameContainer">
+      <property name="frameShape">
+       <enum>QFrame::Shape::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>0</number>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QFrame" name="frameSidebar">
+         <property name="minimumSize">
+          <size>
+           <width>44</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>0</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QFrame {
+	/* E0701E, D27B3C*/
+	background-color:  #E0701E;
+	border: 0;
+}</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Shape::NoFrame</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Shadow::Plain</enum>
+         </property>
+         <property name="lineWidth">
+          <number>0</number>
+         </property>
+         <layout class="QGridLayout" name="gridLayout">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QPushButton" name="pushButtonSwipeSidebar">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>46</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+	background-color:  #E0701E;
+	border: 0;
+	border-color: transparent;
+	font: 300 12pt &quot;Microsoft YaHei UI Light&quot;;
+	color: #FFFFFF;
+    border-radius: 0;
+    border-style: none;
+	text-align: left; 
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+QPushButton:hover {
+	background-color: #D27B3C;
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../icons/24x24/cil-list.png</normaloff>../icons/24x24/cil-list.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>24</width>
+              <height>24</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QPushButton" name="pushButtonIndex">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>46</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+	background-color:  transparent;
+	border: 0;
+	border-color: transparent;
+	font: 300 12pt &quot;Microsoft YaHei UI Light&quot;;
+	color: #FFFFFF;
+    border-radius: 0;
+    border-style: none;
+	text-align: left; 
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+QPushButton:hover {
+	background-color: #D27B3C;
+}</string>
+            </property>
+            <property name="text">
+             <string>Inicio</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../icons/24x24/cil-home.png</normaloff>../icons/24x24/cil-home.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>24</width>
+              <height>24</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="8" column="0">
+           <widget class="QPushButton" name="pushButtonProfile">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>46</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+	background-color:  transparent;
+	border: 0;
+	border-color: transparent;
+	font: 300 12pt &quot;Microsoft YaHei UI Light&quot;;
+	color: #FFFFFF;
+    border-radius: 0;
+    border-style: none;
+	text-align: left; 
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+QPushButton:hover {
+	background-color: #D27B3C;
+}</string>
+            </property>
+            <property name="text">
+             <string>Usuarios</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../icons/24x24/cil-user.png</normaloff>../icons/24x24/cil-user.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>24</width>
+              <height>24</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="0">
+           <widget class="QPushButton" name="pushButtonActions">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>46</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+	background-color:  transparent;
+	border: 0;
+	border-color: transparent;
+	font: 300 12pt &quot;Microsoft YaHei UI Light&quot;;
+	color: #FFFFFF;
+    border-radius: 0;
+    border-style: none;
+	text-align: left; 
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+QPushButton:hover {
+	background-color: #D27B3C;
+}</string>
+            </property>
+            <property name="text">
+             <string>Acciones</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../icons/24x24/cil-touch-app.png</normaloff>../icons/24x24/cil-touch-app.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>24</width>
+              <height>24</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QPushButton" name="pushButtonOperations">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>46</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+	background-color:  transparent;
+	border: 0;
+	border-color: transparent;
+	font: 300 12pt &quot;Microsoft YaHei UI Light&quot;;
+	color: #FFFFFF;
+    border-radius: 0;
+    border-style: none;
+	text-align: left; 
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+QPushButton:hover {
+	background-color: #D27B3C;
+}</string>
+            </property>
+            <property name="text">
+             <string>Instituciones</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../icons/24x24/cil-library.png</normaloff>../icons/24x24/cil-library.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>24</width>
+              <height>24</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="0">
+           <spacer name="verticalSpacer">
+            <property name="orientation">
+             <enum>Qt::Orientation::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="9" column="0">
+           <widget class="QPushButton" name="pushButtonExit">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>46</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+	background-color:  transparent;
+	border: 0;
+	border-color: transparent;
+	font: 300 12pt &quot;Microsoft YaHei UI Light&quot;;
+	color: #FFFFFF;
+    border-radius: 0;
+    border-style: none;
+	text-align: left; 
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+QPushButton:hover {
+	background-color: #c64b30;
+}</string>
+            </property>
+            <property name="text">
+             <string>Salir</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../icons/24x24/cil-x-circle.png</normaloff>../icons/24x24/cil-x-circle.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>24</width>
+              <height>24</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="10" column="0">
+           <spacer name="verticalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Orientation::Vertical</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Policy::Fixed</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="7" column="0">
+           <spacer name="verticalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Orientation::Vertical</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Policy::Fixed</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="1" column="0">
+           <spacer name="verticalSpacer_4">
+            <property name="orientation">
+             <enum>Qt::Orientation::Vertical</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Policy::Fixed</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QStackedWidget" name="stackedWidgetContent">
+         <property name="lineWidth">
+          <number>0</number>
+         </property>
+         <property name="currentIndex">
+          <number>3</number>
+         </property>
+         <widget class="QWidget" name="pageProfile">
+          <layout class="QGridLayout" name="gridLayout_9">
+           <item row="3" column="0">
+            <spacer name="verticalSpacer_10">
+             <property name="orientation">
+              <enum>Qt::Orientation::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="0" column="0">
+            <spacer name="verticalSpacer_9">
+             <property name="orientation">
+              <enum>Qt::Orientation::Vertical</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Policy::Fixed</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="5" column="0">
+            <spacer name="verticalSpacer_11">
+             <property name="orientation">
+              <enum>Qt::Orientation::Vertical</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Policy::Fixed</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="4" column="0">
+            <widget class="QFrame" name="frameUsersContent">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>400</height>
+              </size>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::Shape::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Shadow::Raised</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="labelIndexTitle_2">
+             <property name="styleSheet">
+              <string notr="true">QLabel {
+	font: 300 22pt &quot;Microsoft YaHei UI Light&quot;;
+	color: #E0701E;
+}</string>
+             </property>
+             <property name="text">
+              <string>Perfil</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QFrame" name="frameLine_4">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>10</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>10</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QFrame {
+	background-color: #D27B3C;
+}</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::Shape::NoFrame</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Shadow::Plain</enum>
+             </property>
+             <property name="lineWidth">
+              <number>0</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="pageData">
+          <layout class="QGridLayout" name="gridLayout_13">
+           <item row="0" column="1" rowspan="2">
+            <widget class="QWidget" name="widgetDataView2" native="true">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QWidget {
+    border: 2px solid #D27B3C;
+	border-radius: 20px;
+}
+</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QWidget" name="widgetDataView1" native="true">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QWidget {
+    border: 2px solid #D27B3C;
+	border-radius: 20px;
+}
+</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QWidget" name="widgetDataView3" native="true">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QWidget {
+    border: 2px solid #D27B3C;
+	border-radius: 20px;
+}
+</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="pageActions">
+          <layout class="QGridLayout" name="gridLayout_15">
+           <item row="3" column="0">
+            <spacer name="verticalSpacer_19">
+             <property name="orientation">
+              <enum>Qt::Orientation::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="0" column="0">
+            <spacer name="verticalSpacer_18">
+             <property name="orientation">
+              <enum>Qt::Orientation::Vertical</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Policy::Fixed</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label">
+             <property name="styleSheet">
+              <string notr="true">QLabel {
+	font: 300 22pt &quot;Microsoft YaHei UI Light&quot;;
+	color: #E0701E;
+}</string>
+             </property>
+             <property name="text">
+              <string>Acciones</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="0">
+            <spacer name="verticalSpacer_20">
+             <property name="orientation">
+              <enum>Qt::Orientation::Vertical</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Policy::Fixed</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="4" column="0">
+            <widget class="QFrame" name="frameActionsContent">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>400</height>
+              </size>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::Shape::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Shadow::Raised</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QFrame" name="frameLine">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>10</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>10</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QFrame {
+	background-color: #D27B3C;
+}</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::Shape::NoFrame</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Shadow::Plain</enum>
+             </property>
+             <property name="lineWidth">
+              <number>0</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="pageOperations">
+          <layout class="QGridLayout" name="gridLayout_17">
+           <item row="0" column="0">
+            <spacer name="verticalSpacer_21">
+             <property name="orientation">
+              <enum>Qt::Orientation::Vertical</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Policy::Fixed</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="2" column="0">
+            <widget class="QFrame" name="frameOperationContainer">
+             <property name="frameShape">
+              <enum>QFrame::Shape::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Shadow::Raised</enum>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_5">
+              <item row="0" column="0">
+               <widget class="QFrame" name="frameOperationContent">
+                <property name="minimumSize">
+                 <size>
+                  <width>300</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>300</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::Shape::NoFrame</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Shadow::Plain</enum>
+                </property>
+                <property name="lineWidth">
+                 <number>0</number>
+                </property>
+                <property name="midLineWidth">
+                 <number>0</number>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_8">
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <item row="1" column="0">
+                  <widget class="QPushButton" name="pushButtonDeleteData">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>46</height>
+                    </size>
+                   </property>
+                   <property name="layoutDirection">
+                    <enum>Qt::LayoutDirection::LeftToRight</enum>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton {
+	/* 0f69b4 | E0701E, D27B3C*/
+	background-color:  #0f69b4;
+	border: 0;
+	border-color: transparent;
+	font: 300 14pt &quot;Microsoft YaHei UI Light&quot;;
+	color: #FFFFFF;
+    border-radius: 0;
+    border-style: none;
+	text-align: left; 
+	padding-left: 10px;
+}
+
+QPushButton:hover {
+	background-color: #121212;
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>Eliminar un registro</string>
+                   </property>
+                   <property name="icon">
+                    <iconset>
+                     <normaloff>../icons/24x24/cil-trash.png</normaloff>../icons/24x24/cil-trash.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>24</width>
+                     <height>24</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="0">
+                  <widget class="QPushButton" name="pushButtonCreateData">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>46</height>
+                    </size>
+                   </property>
+                   <property name="layoutDirection">
+                    <enum>Qt::LayoutDirection::LeftToRight</enum>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton {
+	/* 0f69b4 | E0701E, D27B3C*/
+	background-color:  #0f69b4;
+	border: 0;
+	border-color: transparent;
+	font: 300 14pt &quot;Microsoft YaHei UI Light&quot;;
+	color: #FFFFFF;
+    border-radius: 0;
+    border-style: none;
+	text-align: left; 
+	padding-left: 10px;
+}
+
+QPushButton:hover {
+	background-color: #121212;
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>Crear un registro nuevo</string>
+                   </property>
+                   <property name="icon">
+                    <iconset>
+                     <normaloff>../icons/24x24/cil-plus.png</normaloff>../icons/24x24/cil-plus.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>24</width>
+                     <height>24</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="4" column="0">
+                  <widget class="QPushButton" name="pushButtonExportData">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>46</height>
+                    </size>
+                   </property>
+                   <property name="layoutDirection">
+                    <enum>Qt::LayoutDirection::LeftToRight</enum>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton {
+	/* 0f69b4 | E0701E, D27B3C*/
+	background-color:  #0f69b4;
+	border: 0;
+	border-color: transparent;
+	font: 300 14pt &quot;Microsoft YaHei UI Light&quot;;
+	color: #FFFFFF;
+    border-radius: 0;
+    border-style: none;
+	text-align: left; 
+	padding-left: 10px;
+}
+
+QPushButton:hover {
+	background-color: #121212;
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>Exportar registros</string>
+                   </property>
+                   <property name="icon">
+                    <iconset>
+                     <normaloff>../icons/24x24/cil-file.png</normaloff>../icons/24x24/cil-file.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>24</width>
+                     <height>24</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="0">
+                  <widget class="QPushButton" name="pushButtonRefreshDashboard">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>46</height>
+                    </size>
+                   </property>
+                   <property name="layoutDirection">
+                    <enum>Qt::LayoutDirection::LeftToRight</enum>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton {
+	/* 0f69b4 | E0701E, D27B3C*/
+	background-color:  #0f69b4;
+	border: 0;
+	border-color: transparent;
+	font: 300 14pt &quot;Microsoft YaHei UI Light&quot;;
+	color: #FFFFFF;
+    border-radius: 0;
+    border-style: none;
+	text-align: left; 
+	padding-left: 10px;
+}
+
+QPushButton:hover {
+	background-color: #121212;
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>Actualizar dashboard</string>
+                   </property>
+                   <property name="icon">
+                    <iconset>
+                     <normaloff>../icons/24x24/cil-chart-line.png</normaloff>../icons/24x24/cil-chart-line.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>24</width>
+                     <height>24</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="0">
+                  <widget class="QPushButton" name="pushButtonModifyData">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>46</height>
+                    </size>
+                   </property>
+                   <property name="layoutDirection">
+                    <enum>Qt::LayoutDirection::LeftToRight</enum>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton {
+	/* 0f69b4 | E0701E, D27B3C*/
+	background-color:  #0f69b4;
+	border: 0;
+	border-color: transparent;
+	font: 300 14pt &quot;Microsoft YaHei UI Light&quot;;
+	color: #FFFFFF;
+    border-radius: 0;
+    border-style: none;
+	text-align: left; 
+	padding-left: 10px;
+}
+
+QPushButton:hover {
+	background-color: #121212;
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>Modificar un registro</string>
+                   </property>
+                   <property name="icon">
+                    <iconset>
+                     <normaloff>../icons/24x24/cil-pencil.png</normaloff>../icons/24x24/cil-pencil.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>24</width>
+                     <height>24</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="5" column="0">
+                  <widget class="QTreeWidget" name="treeWidgetExportedFiles">
+                   <column>
+                    <property name="text">
+                     <string>Archivos exportados</string>
+                    </property>
+                   </column>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QFrame" name="frameDataViewer">
+                <property name="minimumSize">
+                 <size>
+                  <width>400</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::Shape::NoFrame</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Shadow::Plain</enum>
+                </property>
+                <property name="lineWidth">
+                 <number>0</number>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_6">
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <item row="1" column="0">
+                  <widget class="QTableView" name="tableViewOperationData">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="0">
+                  <widget class="QFrame" name="frameSearcher">
+                   <property name="frameShape">
+                    <enum>QFrame::Shape::NoFrame</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Shadow::Plain</enum>
+                   </property>
+                   <property name="lineWidth">
+                    <number>0</number>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_7">
+                    <item row="0" column="0">
+                     <widget class="QLineEdit" name="lineEditSearcher">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>44</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>44</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QLineEdit {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid;
+    border-color: #0f69b4;
+	font: 300 12pt &quot;Microsoft YaHei UI Light&quot;;
+}
+
+QLineEdit:hover,
+QLineEdit:focus {
+    border-bottom-width: 5px;
+    border-color: #0f69b4;
+}
+</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignmentFlag::AlignCenter</set>
+                      </property>
+                      <property name="placeholderText">
+                       <string>Buscador</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="1">
+                     <widget class="QPushButton" name="pushButtonSearchData">
+                      <property name="minimumSize">
+                       <size>
+                        <width>44</width>
+                        <height>44</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>44</width>
+                        <height>44</height>
+                       </size>
+                      </property>
+                      <property name="layoutDirection">
+                       <enum>Qt::LayoutDirection::LeftToRight</enum>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QPushButton {
+	/* 0f69b4 | E0701E, D27B3C*/
+	background-color:  #0f69b4;
+	border: 0;
+	border-color: transparent;
+	font: 300 14pt &quot;Microsoft YaHei UI Light&quot;;
+	color: #FFFFFF;
+    border-radius: 0;
+    border-style: none;
+	text-align: left; 
+	padding-left: 10px;
+}
+
+QPushButton:hover {
+	background-color: #121212;
+}</string>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="icon">
+                       <iconset>
+                        <normaloff>../icons/24x24/cil-chevron-circle-right-alt.png</normaloff>../icons/24x24/cil-chevron-circle-right-alt.png</iconset>
+                      </property>
+                      <property name="iconSize">
+                       <size>
+                        <width>24</width>
+                        <height>24</height>
+                       </size>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
