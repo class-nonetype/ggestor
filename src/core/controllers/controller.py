@@ -8,19 +8,36 @@ class Controller:
     
     def sign_in(self, **kwargs):
         status = self.ModelController.sign_in(**kwargs)
-        return None if not status else self.get_view(mode=False)
+        if status:
+            self.get_application_view().show()
 
-    def get_view(self, **kwargs):
-        if kwargs['mode']:
+    def verify_session(self):
+        try:
+            return self.ModelController.verify_session(
+                authorization=self.ModelController.SessionModel.get_access_token()
+            ).status_code
+        except:
+            return self.ModelController.verify_session(
+                authorization=self.ModelController.InternalDatabaseModel.select_session()
+            ).status_code
+    
+    def get_sign_in_view(self):
+        sign_in_view = self.ViewController.get_sign_in_view()
+        return sign_in_view
 
-            sign_in_view = self.ViewController.get_sign_in_view(mode=True)
-            #self.ViewController.set_object_status(sign_in_view.pushButtonSignIn, False)
-            sign_in_view.show()
+    def get_application_view(self):
+        application_view = self.ViewController.get_application_view()
+        return application_view
 
-        else:
+    def get_view(self):
+        if self.verify_session() == 200:
             application_view = self.ViewController.get_application_view()
             application_view.show()
+        else:
+            sign_in_view = self.ViewController.get_sign_in_view()
+            sign_in_view.show()
 
+            
 
-def run_application():
-    return Controller().get_view(mode=True)
+def run_application() -> None:
+    return Controller().get_view()

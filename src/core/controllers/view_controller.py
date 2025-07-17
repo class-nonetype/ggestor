@@ -28,7 +28,7 @@ class ViewController:
         return Object.setEnabled(status)
     
     
-    def get_sign_in_view(self, mode: bool):
+    def get_sign_in_view(self):
         self.SignInView = SignInView()
         self.SignInView.setupUi()
         self.SignInView.setWindowTitle(self.SignInView.__str__())
@@ -48,7 +48,7 @@ class ViewController:
         self.SignInView.setWindowState(QtCore.Qt.WindowActive)
         self.SignInView.raise_()
 
-        return self.SignInView if mode else self.SignInView.show()
+        return self.SignInView
 
         
 

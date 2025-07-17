@@ -1,3 +1,8 @@
+from os import getenv
+from dotenv import load_dotenv
+load_dotenv()
+
+
 API_PREFIX = {
     'authentication': {
         'sign_in': '/authentication/sign-in',
@@ -6,4 +11,6 @@ API_PREFIX = {
 }
 
 API_VERSION = 'v1'
-API_URL = f'http://192.168.1.92:7500/api/{API_VERSION}'
+API_URL = getenv('API_URL') + API_VERSION
+
+DATABASE_URL = getenv('DATABASE_URL')
