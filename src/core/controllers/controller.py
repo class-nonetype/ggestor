@@ -13,13 +13,16 @@ class Controller:
 
     def verify_session(self):
         try:
-            return self.ModelController.verify_session(
-                authorization=self.ModelController.SessionModel.get_access_token()
-            ).status_code
-        except:
-            return self.ModelController.verify_session(
-                authorization=self.ModelController.InternalDatabaseModel.select_session()
-            ).status_code
+            try:
+                return self.ModelController.verify_session(
+                    authorization=self.ModelController.SessionModel.get_access_token()
+                ).status_code
+            except:
+                return self.ModelController.verify_session(
+                    authorization=self.ModelController.InternalDatabaseModel.select_session()
+                ).status_code
+        except Exception as e:
+            print(f'{e=}')
     
     def get_sign_in_view(self):
         sign_in_view = self.ViewController.get_sign_in_view()
