@@ -1,4 +1,4 @@
-from src.core.controllers.view_controller import ViewController
+from src.core.controllers.view_controller import (ViewController, SignInView, ApplicationView)
 from src.core.controllers.model_controller import ModelController
 
 class Controller:
@@ -6,7 +6,7 @@ class Controller:
         self.ViewController = ViewController(self)
         self.ModelController = ModelController()
     
-    def sign_in(self, **kwargs):
+    def sign_in(self, **kwargs) -> None:
         status = self.ModelController.sign_in(**kwargs)
         if status:
             self.get_application_view().show()
@@ -24,22 +24,23 @@ class Controller:
         except Exception as e:
             print(f'{e=}')
     
-    def get_sign_in_view(self):
+    def get_sign_in_view(self) -> SignInView:
+        return self.ViewController.get_sign_in_view()
+
+    def get_application_view(self) -> ApplicationView:
+        return self.ViewController.get_application_view()
+
+    def get_view(self) -> None:
         sign_in_view = self.ViewController.get_sign_in_view()
-        return sign_in_view
-
-    def get_application_view(self):
         application_view = self.ViewController.get_application_view()
-        return application_view
 
-    def get_view(self):
         if self.verify_session() == 200:
-            application_view = self.ViewController.get_application_view()
+            if sign_in_view.isActiveWindow() or sign_in_view.isEnabled():
+                sign_in_view.destroy()
+
             application_view.show()
         else:
-            sign_in_view = self.ViewController.get_sign_in_view()
             sign_in_view.show()
-
             
 
 def run_application() -> None:
