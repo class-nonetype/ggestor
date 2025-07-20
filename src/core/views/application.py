@@ -70,7 +70,7 @@ class ApplicationView(QMainWindow):
 "	background-color: #D27B3C;\n"
 "}")
         icon = QIcon()
-        icon.addFile(u"src/assets/icons/24x24/cil-list.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        icon.addFile(u"../icons/24x24/cil-list.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.pushButtonSwipeSidebar.setIcon(icon)
         self.pushButtonSwipeSidebar.setIconSize(QSize(24, 24))
 
@@ -96,7 +96,7 @@ class ApplicationView(QMainWindow):
 "	background-color: #D27B3C;\n"
 "}")
         icon1 = QIcon()
-        icon1.addFile(u"src/assets/icons/24x24/cil-home.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        icon1.addFile(u"../icons/24x24/cil-home.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.pushButtonIndex.setIcon(icon1)
         self.pushButtonIndex.setIconSize(QSize(24, 24))
 
@@ -122,7 +122,7 @@ class ApplicationView(QMainWindow):
 "	background-color: #D27B3C;\n"
 "}")
         icon2 = QIcon()
-        icon2.addFile(u"src/assets/icons/24x24/cil-user.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        icon2.addFile(u"../icons/24x24/cil-user.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.pushButtonProfile.setIcon(icon2)
         self.pushButtonProfile.setIconSize(QSize(24, 24))
 
@@ -148,7 +148,7 @@ class ApplicationView(QMainWindow):
 "	background-color: #D27B3C;\n"
 "}")
         icon3 = QIcon()
-        icon3.addFile(u"src/assets/icons/24x24/cil-touch-app.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        icon3.addFile(u"../icons/24x24/cil-touch-app.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.pushButtonActions.setIcon(icon3)
         self.pushButtonActions.setIconSize(QSize(24, 24))
 
@@ -174,7 +174,7 @@ class ApplicationView(QMainWindow):
 "	background-color: #D27B3C;\n"
 "}")
         icon4 = QIcon()
-        icon4.addFile(u"src/assets/icons/24x24/cil-library.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        icon4.addFile(u"../icons/24x24/cil-library.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.pushButtonOperations.setIcon(icon4)
         self.pushButtonOperations.setIconSize(QSize(24, 24))
 
@@ -204,7 +204,7 @@ class ApplicationView(QMainWindow):
 "	background-color: #c64b30;\n"
 "}")
         icon5 = QIcon()
-        icon5.addFile(u"src/assets/icons/24x24/cil-x-circle.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        icon5.addFile(u"../icons/24x24/cil-x-circle.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.pushButtonExit.setIcon(icon5)
         self.pushButtonExit.setIconSize(QSize(24, 24))
 
@@ -275,78 +275,19 @@ class ApplicationView(QMainWindow):
         self.gridLayout_9.addWidget(self.frameLine_4, 2, 0, 1, 1)
 
         self.stackedWidgetContent.addWidget(self.pageProfile)
-        self.pageData = QWidget()
-        self.pageData.setObjectName(u"pageData")
-        self.gridLayout_13 = QGridLayout(self.pageData)
-        self.gridLayout_13.setObjectName(u"gridLayout_13")
-        self.widgetDataView2 = QWidget(self.pageData)
-        self.widgetDataView2.setObjectName(u"widgetDataView2")
-        self.widgetDataView2.setMinimumSize(QSize(0, 0))
-        self.widgetDataView2.setStyleSheet(u"QWidget {\n"
-"    border: 2px solid #D27B3C;\n"
-"	border-radius: 20px;\n"
-"}\n"
-"")
-
-        self.gridLayout_13.addWidget(self.widgetDataView2, 0, 1, 2, 1)
-
-        self.widgetDataView1 = QWidget(self.pageData)
-        self.widgetDataView1.setObjectName(u"widgetDataView1")
-        self.widgetDataView1.setMinimumSize(QSize(0, 0))
-        self.widgetDataView1.setStyleSheet(u"QWidget {\n"
-"    border: 2px solid #D27B3C;\n"
-"	border-radius: 20px;\n"
-"}\n"
-"")
-
-        self.gridLayout_13.addWidget(self.widgetDataView1, 0, 0, 1, 1)
-
-        self.widgetDataView3 = QWidget(self.pageData)
-        self.widgetDataView3.setObjectName(u"widgetDataView3")
-        self.widgetDataView3.setMinimumSize(QSize(0, 0))
-        self.widgetDataView3.setStyleSheet(u"QWidget {\n"
-"    border: 2px solid #D27B3C;\n"
-"	border-radius: 20px;\n"
-"}\n"
-"")
-
-        self.gridLayout_13.addWidget(self.widgetDataView3, 1, 0, 1, 1)
-
-        self.stackedWidgetContent.addWidget(self.pageData)
-        self.pageActions = QWidget()
-        self.pageActions.setObjectName(u"pageActions")
-        self.gridLayout_15 = QGridLayout(self.pageActions)
+        self.pageHome = QWidget()
+        self.pageHome.setObjectName(u"pageHome")
+        self.gridLayout_15 = QGridLayout(self.pageHome)
         self.gridLayout_15.setObjectName(u"gridLayout_15")
-        self.verticalSpacer_19 = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+        self.frameHomeContent = QFrame(self.pageHome)
+        self.frameHomeContent.setObjectName(u"frameHomeContent")
+        self.frameHomeContent.setMinimumSize(QSize(0, 400))
+        self.frameHomeContent.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frameHomeContent.setFrameShadow(QFrame.Shadow.Raised)
 
-        self.gridLayout_15.addItem(self.verticalSpacer_19, 3, 0, 1, 1)
+        self.gridLayout_15.addWidget(self.frameHomeContent, 2, 0, 1, 1)
 
-        self.verticalSpacer_18 = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Fixed)
-
-        self.gridLayout_15.addItem(self.verticalSpacer_18, 0, 0, 1, 1)
-
-        self.label = QLabel(self.pageActions)
-        self.label.setObjectName(u"label")
-        self.label.setStyleSheet(u"QLabel {\n"
-"	font: 300 22pt \"Microsoft YaHei UI Light\";\n"
-"	color: #E0701E;\n"
-"}")
-
-        self.gridLayout_15.addWidget(self.label, 1, 0, 1, 1)
-
-        self.verticalSpacer_20 = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Fixed)
-
-        self.gridLayout_15.addItem(self.verticalSpacer_20, 5, 0, 1, 1)
-
-        self.frameActionsContent = QFrame(self.pageActions)
-        self.frameActionsContent.setObjectName(u"frameActionsContent")
-        self.frameActionsContent.setMinimumSize(QSize(0, 400))
-        self.frameActionsContent.setFrameShape(QFrame.Shape.StyledPanel)
-        self.frameActionsContent.setFrameShadow(QFrame.Shadow.Raised)
-
-        self.gridLayout_15.addWidget(self.frameActionsContent, 4, 0, 1, 1)
-
-        self.frameLine = QFrame(self.pageActions)
+        self.frameLine = QFrame(self.pageHome)
         self.frameLine.setObjectName(u"frameLine")
         self.frameLine.setMinimumSize(QSize(0, 10))
         self.frameLine.setMaximumSize(QSize(16777215, 10))
@@ -357,9 +298,53 @@ class ApplicationView(QMainWindow):
         self.frameLine.setFrameShadow(QFrame.Shadow.Plain)
         self.frameLine.setLineWidth(0)
 
-        self.gridLayout_15.addWidget(self.frameLine, 2, 0, 1, 1)
+        self.gridLayout_15.addWidget(self.frameLine, 1, 0, 1, 1)
 
-        self.stackedWidgetContent.addWidget(self.pageActions)
+        self.labelHome = QLabel(self.pageHome)
+        self.labelHome.setObjectName(u"labelHome")
+        self.labelHome.setStyleSheet(u"QLabel {\n"
+"	font: 300 22pt \"Microsoft YaHei UI Light\";\n"
+"	color: #E0701E;\n"
+"}")
+
+        self.gridLayout_15.addWidget(self.labelHome, 0, 0, 1, 1)
+
+        self.stackedWidgetContent.addWidget(self.pageHome)
+        self.page = QWidget()
+        self.page.setObjectName(u"page")
+        self.gridLayout_4 = QGridLayout(self.page)
+        self.gridLayout_4.setObjectName(u"gridLayout_4")
+        self.label_2 = QLabel(self.page)
+        self.label_2.setObjectName(u"label_2")
+        self.label_2.setStyleSheet(u"QLabel {\n"
+"	font: 300 22pt \"Microsoft YaHei UI Light\";\n"
+"	color: #E0701E;\n"
+"}")
+
+        self.gridLayout_4.addWidget(self.label_2, 0, 0, 1, 1)
+
+        self.frameLine_2 = QFrame(self.page)
+        self.frameLine_2.setObjectName(u"frameLine_2")
+        self.frameLine_2.setMinimumSize(QSize(0, 10))
+        self.frameLine_2.setMaximumSize(QSize(16777215, 10))
+        self.frameLine_2.setStyleSheet(u"QFrame {\n"
+"	background-color: #D27B3C;\n"
+"}")
+        self.frameLine_2.setFrameShape(QFrame.Shape.NoFrame)
+        self.frameLine_2.setFrameShadow(QFrame.Shadow.Plain)
+        self.frameLine_2.setLineWidth(0)
+
+        self.gridLayout_4.addWidget(self.frameLine_2, 1, 0, 1, 1)
+
+        self.frameActionsContent_2 = QFrame(self.page)
+        self.frameActionsContent_2.setObjectName(u"frameActionsContent_2")
+        self.frameActionsContent_2.setMinimumSize(QSize(0, 400))
+        self.frameActionsContent_2.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frameActionsContent_2.setFrameShadow(QFrame.Shadow.Raised)
+
+        self.gridLayout_4.addWidget(self.frameActionsContent_2, 2, 0, 1, 1)
+
+        self.stackedWidgetContent.addWidget(self.page)
         self.pageOperations = QWidget()
         self.pageOperations.setObjectName(u"pageOperations")
         self.gridLayout_17 = QGridLayout(self.pageOperations)
@@ -406,7 +391,7 @@ class ApplicationView(QMainWindow):
 "	background-color: #121212;\n"
 "}")
         icon6 = QIcon()
-        icon6.addFile(u"src/assets/icons/24x24/cil-trash.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        icon6.addFile(u"../icons/24x24/cil-trash.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.pushButtonDeleteData.setIcon(icon6)
         self.pushButtonDeleteData.setIconSize(QSize(24, 24))
 
@@ -433,7 +418,7 @@ class ApplicationView(QMainWindow):
 "	background-color: #121212;\n"
 "}")
         icon7 = QIcon()
-        icon7.addFile(u"src/assets/icons/24x24/cil-plus.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        icon7.addFile(u"../icons/24x24/cil-plus.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.pushButtonCreateData.setIcon(icon7)
         self.pushButtonCreateData.setIconSize(QSize(24, 24))
 
@@ -460,7 +445,7 @@ class ApplicationView(QMainWindow):
 "	background-color: #121212;\n"
 "}")
         icon8 = QIcon()
-        icon8.addFile(u"src/assets/icons/24x24/cil-file.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        icon8.addFile(u"../icons/24x24/cil-file.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.pushButtonExportData.setIcon(icon8)
         self.pushButtonExportData.setIconSize(QSize(24, 24))
 
@@ -487,7 +472,7 @@ class ApplicationView(QMainWindow):
 "	background-color: #121212;\n"
 "}")
         icon9 = QIcon()
-        icon9.addFile(u"src/assets/icons/24x24/cil-chart-line.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        icon9.addFile(u"../icons/24x24/cil-chart-line.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.pushButtonRefreshDashboard.setIcon(icon9)
         self.pushButtonRefreshDashboard.setIconSize(QSize(24, 24))
 
@@ -514,7 +499,7 @@ class ApplicationView(QMainWindow):
 "	background-color: #121212;\n"
 "}")
         icon10 = QIcon()
-        icon10.addFile(u"src/assets/icons/24x24/cil-pencil.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        icon10.addFile(u"../icons/24x24/cil-pencil.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.pushButtonModifyData.setIcon(icon10)
         self.pushButtonModifyData.setIconSize(QSize(24, 24))
 
@@ -522,6 +507,9 @@ class ApplicationView(QMainWindow):
 
         self.treeWidgetExportedFiles = QTreeWidget(self.frameOperationContent)
         self.treeWidgetExportedFiles.setObjectName(u"treeWidgetExportedFiles")
+        self.treeWidgetExportedFiles.header().setCascadingSectionResizes(False)
+        self.treeWidgetExportedFiles.header().setHighlightSections(False)
+        self.treeWidgetExportedFiles.header().setProperty("showSortIndicator", False)
 
         self.gridLayout_8.addWidget(self.treeWidgetExportedFiles, 5, 0, 1, 1)
 
@@ -594,7 +582,7 @@ class ApplicationView(QMainWindow):
 "	background-color: #121212;\n"
 "}")
         icon11 = QIcon()
-        icon11.addFile(u"src/assets/icons/24x24/cil-chevron-circle-right-alt.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        icon11.addFile(u"../icons/24x24/cil-chevron-circle-right-alt.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.pushButtonSearchData.setIcon(icon11)
         self.pushButtonSearchData.setIconSize(QSize(24, 24))
 
@@ -635,15 +623,15 @@ class ApplicationView(QMainWindow):
         self.pushButtonOperations.setText(QCoreApplication.translate("MainWindow", u"Instituciones", None))
         self.pushButtonExit.setText(QCoreApplication.translate("MainWindow", u"Salir", None))
         self.labelIndexTitle_2.setText(QCoreApplication.translate("MainWindow", u"Perfil", None))
-        self.label.setText(QCoreApplication.translate("MainWindow", u"Acciones", None))
+        self.labelHome.setText(QCoreApplication.translate("MainWindow", u"Inicio", None))
+        self.label_2.setText(QCoreApplication.translate("MainWindow", u"Acciones", None))
         self.pushButtonDeleteData.setText(QCoreApplication.translate("MainWindow", u"Eliminar un registro", None))
         self.pushButtonCreateData.setText(QCoreApplication.translate("MainWindow", u"Crear un registro nuevo", None))
         self.pushButtonExportData.setText(QCoreApplication.translate("MainWindow", u"Exportar registros", None))
-        self.pushButtonRefreshDashboard.setText(QCoreApplication.translate("MainWindow", u"Actualizar dashboard", None))
+        self.pushButtonRefreshDashboard.setText(QCoreApplication.translate("MainWindow", u"Dashboard", None))
         self.pushButtonModifyData.setText(QCoreApplication.translate("MainWindow", u"Modificar un registro", None))
         ___qtreewidgetitem = self.treeWidgetExportedFiles.headerItem()
         ___qtreewidgetitem.setText(0, QCoreApplication.translate("MainWindow", u"Archivos exportados", None));
         self.lineEditSearcher.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Buscador", None))
         self.pushButtonSearchData.setText("")
     # retranslateUi
-
